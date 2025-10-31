@@ -1,143 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Practical 07-01</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 07-01</title>
 </head>
-
 <body>
-
-
-
-
-
-  
-
-    <section>
-
-        <h2>1. Local Video</h2>
-
-
-
-        <div>
-
-            <video controls preload="metadata" width="960" height="540">
-
-                <source src="myvid.mp4" type="video/mp4">
-
-                <source src="myvid.webm" type="video/webm">
-
-                Your browser does not support the video tag.
-
-                <p>
-
-                    You can <a href="myvid.mp4" download>download the MP4 video here</a>.
-
-                </p>
-
-            </video>
-
-        </div>
-
-
-
-    </section>
-
-
-
-
-
-    <section>
-
-        <h2>2. Educational Video </h2>
-
-        <div>
-
-
-
-            <iframe
-
-                src="https://www.youtube.com/embed/SzJ46YA_RaA"
-
-                title="YouTube video player"
-
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-
-                referrerpolicy="strict-origin-when-cross-origin"
-
-                allowfullscreen
-
-                width="960" height="540"
-
-            ></iframe>
-
-        </div>
-
-        <p>
-
-            Source: <a href="https://youtu.be/SzJ46YA_RaA?si=jE0a1F37qj8i4sTk" target="_blank">What is Computer Science? - Simple Learning</a>
-
-        </p>
-
-    </section>
-
-
-
- 
-
-    <section>
-
-        <h2>3. Embedded Website Browsing</h2>
-
-
-
-        <div>
-
-            <iframe
-
-                src="https://example.com"
-
-                name="myBrowsingFrame"
-
-                title="Browsing website"
-
-                width="1000"
-
-                height="800"
-
-            ></iframe>
-
-        </div>
-
-
-
-        <div>
-
-            <a href="about:blank" target="myBrowsingFrame">
-
-                Reset Iframe
-
-            </a>
-
-            <a href="https://www.w3.org/" target="myBrowsingFrame">
-
-                Go to W3.org
-
-            </a>
-
-        </div>
-
-
-
-    </section>
-
+  <h1>Practical 07-01</h1>
+
+  <h2>Local Video</h2>
+  <video width="960" height="540" controls>
+    <source src="myvid.mp4" type="video/mp4">
+    <source src="myvid.webm" type="video/webm">
+    <a href="myvid.mp4" download>Click here to download the video.</a>
+  </video>
+  <hr>
+  <h2>Educational Computer Science Video</h2>
+  <iframe width="960" height="540" 
+          src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+          title="Educational Computer Science Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  <hr>
+  <h2>Browsing Website</h2>
+  <iframe src="https://example.com" 
+          title="Browsing website"
+          name="myFrame"
+          width="1000" 
+          height="800">
+  </iframe>
 </body>
-
 </html>
